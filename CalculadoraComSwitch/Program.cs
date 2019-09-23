@@ -19,13 +19,31 @@ namespace Calculadora
             switch (op)
             {
                 case "+":
-                    resultado = Calculadora.Somar(n1, n2);
+                    resultado = Calculadora.Operacoes.Somar(n1, n2);
                     Console.WriteLine($"A soma de {n1} + {n2} é: {resultado}");
                     break;
 
-                default:
+                case "-":
+                    resultado = Calculadora.Operacoes.Subtrai(n1, n2);
+                    Console.WriteLine($"A Subtração de {n1} - {n2} é: {resultado}");
+                    break;
+
+                case "/":
+                    resultado = Calculadora.Operacoes.Dividir(n1, n2);
+                    Console.WriteLine($"A Divisão de {n1} / {n2} é: {resultado}");
+                    break;
+
+                case "*":
+                    resultado = Calculadora.Operacoes.Multiplicar(n1, n2);
+                    Console.WriteLine($"A Multiplicação de {n1} * {n2} é: {resultado}");
+
+                  default:
                     Console.WriteLine("Operação Inválida");
                     break;
+                    
+                   
+                    
+                    
             }
 
 

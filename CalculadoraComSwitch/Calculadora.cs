@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Calculadora
 {
-    static class Calculadora
+    static class Operacoes
+        
     {
         /// <summary>
         /// Soma dois números
@@ -15,6 +16,19 @@ namespace Calculadora
         public static int Somar(int n1, int n2)
         {
             return n1 + n2;
+        }
+        public static int Subtrai(int n1, int n2)
+        {
+            return n1 - n2;
+        }
+
+        public static int Dividir(int n1, int n2)
+        {
+            return n1 / n2;
+        }
+        public static int Multiplicar(int n1, int n2)
+        {
+            return n1 * n2;
         }
     }
 }
