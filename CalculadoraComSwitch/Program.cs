@@ -9,7 +9,12 @@ namespace Calculadora
             string op;
             int n1, n2, resultado;
 
-            Console.WriteLine("Digite a operação que deseja realizar");
+            Console.WriteLine("Bem Vindo a Calculadora");
+            Console.WriteLine("\nDigite + para Adição");
+            Console.WriteLine("Digite - para Subtração");
+            Console.WriteLine("Digite / para Divisão");
+            Console.WriteLine("Digite * para Multiplicação");
+            Console.WriteLine("\nDigite a operação que deseja realizar");
             op = Console.ReadLine();
             Console.WriteLine("Digite o primeiro numero");
             n1 = int.Parse(Console.ReadLine());
@@ -36,6 +41,7 @@ namespace Calculadora
                 case "*":
                     resultado = Calculadora.Operacoes.Multiplicar(n1, n2);
                     Console.WriteLine($"A Multiplicação de {n1} * {n2} é: {resultado}");
+                    break;
 
                   default:
                     Console.WriteLine("Operação Inválida");
