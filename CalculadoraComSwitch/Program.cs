@@ -7,7 +7,7 @@ namespace Calculadora
         static void Main(string[] args)
         {
             string op;
-            int n1, n2, resultado;
+            double n1, n2, resultado;
 
             Console.WriteLine("Bem Vindo a Calculadora");
             Console.WriteLine("\nDigite + para Adição");
@@ -17,9 +17,9 @@ namespace Calculadora
             Console.WriteLine("\nDigite a operação que deseja realizar");
             op = Console.ReadLine();
             Console.WriteLine("Digite o primeiro numero");
-            n1 = int.Parse(Console.ReadLine());
+            n1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo numero");
-            n2 = int.Parse(Console.ReadLine());
+            n2 = double.Parse(Console.ReadLine());
 
             switch (op)
             {
