@@ -25,22 +25,22 @@ namespace Calculadora
             {
                 case "+":
                     resultado = Calculadora.Operacoes.Somar(n1, n2);
-                    Console.WriteLine($"A soma de {n1} + {n2} é: {resultado}");
+                    Console.WriteLine($"A soma de {n1} + {n2}  é: {resultado:N2}");
                     break;
 
                 case "-":
                     resultado = Calculadora.Operacoes.Subtrai(n1, n2);
-                    Console.WriteLine($"A Subtração de {n1} - {n2} é: {resultado}");
+                    Console.WriteLine($"A Subtração de {n1} - {n2} é: {resultado:N2}");
                     break;
 
                 case "/":
                     resultado = Calculadora.Operacoes.Dividir(n1, n2);
-                    Console.WriteLine($"A Divisão de {n1} / {n2} é: {resultado}");
+                    Console.WriteLine($"A Divisão de {n1} / {n2} é: {resultado:N2}");
                     break;
 
                 case "*":
                     resultado = Calculadora.Operacoes.Multiplicar(n1, n2);
-                    Console.WriteLine($"A Multiplicação de {n1} * {n2} é: {resultado}");
+                    Console.WriteLine($"A Multiplicação de {n1} * {n2} é: {resultado:N2}");
                     break;
 
                   default:

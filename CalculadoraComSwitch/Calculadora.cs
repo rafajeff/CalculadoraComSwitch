@@ -15,7 +15,7 @@ namespace Calculadora
         /// <returns>Retorna a soma de dois números</returns>
         public static double Somar(double n1, double n2)
         {
-            return  n1 + n2;
+            return n1 + n2 ;
         }
         public static double Subtrai(double n1, double n2)
         {
